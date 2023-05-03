@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>EJERCICIO 3</TITLE>
+<meta charset="utf8"></meta>
+
+<LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" src="codigo.js"></script>
+
+</HEAD>
+<BODY class='FondoPagina'>
+<H1 class='dos' align='center'>EJERCICIO 3 - PRACTICO HTML-JAVASCRIPT</H1>
+<HR>
+<P> - Comenzamos a incorporar objetos HTML -</p>
+
+<div class='clasediv_padre'>
+	<div class='clasediv_hijo'>
+
+		<label class='label'>MATRIZ 1</label>
+		<br>
+		<input type='text' class='inputchico' id='ma1_0_0' onkeydown='return solonumero(event)'></input>
+		<input type='text' class='inputchico' id='ma1_0_1' onkeydown='return solonumero(event)'></input>
+		<br>
+		<input type='text' class='inputchico' id='ma1_1_0' onkeydown='return solonumero(event)'></input>
+		<input type='text' class='inputchico' id='ma1_1_1' onkeydown='return solonumero(event)'></input>
+	</div>
+	<div class='clasediv_hijo'>
+
+		<label class='label'>MATRIZ 2</label>
+		<br>
+		<input type='text' class='inputchico' id='ma2_0_0' onkeydown='return solonumero(event)'></input>
+		<input type='text' class='inputchico' id='ma2_0_1' onkeydown='return solonumero(event)'></input>
+		<br>
+		<input type='text' class='inputchico' id='ma2_1_0' onkeydown='return solonumero(event)'></input>
+		<input type='text' class='inputchico' id='ma2_1_1' onkeydown='return solonumero(event)'></input>
+		
+	</div>
+	<div class='clasediv_hijo'>
+
+		<label class='label'>RESULTADO</label>
+		<br>
+		<input type='text' class='inputchico' id='re_0_0' readonly></input>
+		<input type='text' class='inputchico' id='re_0_1' readonly></input>
+		<br>
+		<input type='text' class='inputchico' id='re_1_0' readonly></input>
+		<input type='text' class='inputchico' id='re_1_1' readonly></input>
+		
+	</div>
+
+</div>
+<div class='clasediv_padre'>
+<input type='button' class='boton' value='SUMAR' align='center' onclick="funcion_suma_matriz()"></input>
+<input type='button' class='boton' value='MULTIPLICAR' align='center' onclick="funcion_multi_matriz()"></input>
+</div>
+</BODY>
+</HTML>

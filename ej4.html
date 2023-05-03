@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<TITLE>EJERCICIO 4</TITLE>
+<meta charset="utf8"></meta>
+
+<LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript" src="codigo.js"></script>
+
+</HEAD>
+<BODY class='FondoPagina'>
+<H1 class='dos' align='center'>EJERCICIO 4 - PRACTICO HTML-JAVASCRIPT</H1>
+<HR>
+<P> - Comenzamos a incorporar objetos HTML -</p>
+
+<table>
+
+		<table id='tb' border=1 align=center style='BACKGROUND-COLOR: #FFD968'>
+			<tr>
+				<td COLSPAN=3 align="center"><label class='label'>- DATOS PERSONALES -</label></td>
+				
+			</tr>
+			<tr>
+				<td><label class='label'>Nombre: </label><input type='text' class='uno' id='nombre'></input></td>
+				<td><label class='label'>Apellido: </label><input type='text' class='uno' id='apellido'></input></td>
+				<td rowspan=4><textarea id='areatexto' cols='40' rows='10'></textarea></td>
+			</tr>
+			<tr>
+				<td><label class='label'>Edad: </label><input type='text' class='uno' id='edad'></input></td>
+				<td><label class='label'>Sexo: </label>
+						<input type='radio' class='uno' id='sexoM' name='sexo' value='M'>Masc.</input>
+						<input type='radio' class='uno' id='sexoF' name='sexo' value='F'>Fem.</input>
+						<input type='radio' class='uno' id='sexoO' name='sexo' value='O'>Otro</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan=2><label class='label'>Domicilio: </label><input type='text' class='uno' id='domicilio' size=70></input></td>
+
+			</tr>
+			<tr>
+				<td colspan=2><label class='label'>Provincia: </label>
+				<select id='provincia' onchange="funcion_copia_datos()">
+					<option value=''>-</option>
+					<option value='MENDOZA'>Mendoza</option>
+					<option value='SAN JUAN'>San Juan</option>
+					<option value='SAN LUIS'>San Luis</option>
+					<option value='CORDOBA'>Cordoba</option>
+					<option value='BS AS'>Buenos Aires</option>
+					
+				</select>
+				
+				</td>
+
+			</tr>
+
+		</table>
+
+</BODY>
+</HTML>
